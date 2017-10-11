@@ -1,0 +1,154 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+    background:rgb(200,200,200);
+}
+#texto{
+    text-decoration: none;
+
+
+}
+#texto:hover{
+    color: #262626;
+}
+#contenedor{
+    padding: 15px;
+    margin: auto;
+    width: 900px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.3);
+    background: white;
+}
+
+#contienecarrito{
+    top: 150px;
+    position: absolute;
+    margin-left: 570px;
+    clear: both;
+    width: 300px;
+    float: right;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2)inset;
+    background: rgb(200,200,200);
+
+}
+#contienecarrito table tr td{
+    text-align: right;
+    padding: 4px;
+}
+
+#contienecarrito table{
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+}
+
+#contienecarrito table tr:last-child{
+    background: beige;
+}
+
+article a{
+    color: black;
+    text-decoration: none;
+}
+
+
+article{
+
+    padding-top: 80px;
+    padding-bottom: 15px;
+
+}
+#carrito{
+    background: white;
+}
+
+article img{
+    margin-right: 10px;
+    border: 5px solid white;
+    float: left;
+    box-shadow: 0px 10px 15px rgba(0.0.0.0.4);
+}
+/* info de los productos comprado tablita*/
+ #info{
+     margin-top: 15px;
+     margin-left: 15px;
+ }
+
+article{
+    clear: both;
+}
+
+nav{
+    background-color: #333;
+    height: 48px;
+}
+ nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-table;
+}
+
+ nav ul li {
+     float: left;
+     color: white;
+     text-decoration: none;
+ }
+nav ul li:hover a {
+    text-decoration: none;
+    color: white;
+}
+ nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover:not(.active) {
+    background-color: #111;
+}
+#rigth {
+    float: right;
+
+}
+
+nav ul li a.active
+{background-color: #4CAF50;
+}
+
+nav ul li.right {
+    float: right;
+}
+
+@media screen and (max-width: 600px){
+
+   nav ul li {
+        float: none;
+    }
+}
+#menu nav ul{
+    list-style: none;
+    font-size: 14px;
+}
+
+#nav-mobile {
+    display: none;
+    background: url("../img/menu.png")  no-repeat center center;
+    float:right;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: .6;
+}
+/* agregamos esta clase a #nav-mobile, cuando el menu mobile haya sido desplegado*/
+#nav-mobile.nav-active{
+    opacity: 1;
+}
+
